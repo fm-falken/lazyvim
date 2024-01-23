@@ -1,11 +1,5 @@
 return {
   {
-    "tpope/vim-fugitive",
-    "tpope/vim-rhubarb",
-
-    -- Detect tabstop and shiftwidth automatically
-    "tpope/vim-sleuth",
-
     -- Fancy icons for cmp
     "onsails/lspkind.nvim",
   },
@@ -21,8 +15,12 @@ return {
       view_options = {
         show_hidden = true,
       },
+      default_file_explorer = true,
     },
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    keys = {
+      { "<leader>e", "<cmd>Oil<cr>", desc = "Open Oil (File Explorer)" },
+    },
   },
 }
